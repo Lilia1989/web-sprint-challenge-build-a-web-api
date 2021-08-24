@@ -1,7 +1,7 @@
 // Write your "projects" router here!
 const router = require("express").Router();
 const Project = require("./projects-model");
-const { checkProjectId, checkProject } = require("../middleware/middleware");
+const { checkProjectId, checkProject } = require("./projects-middleware");
 
 router.get("/", (req, res, next) => {
     Project.get()

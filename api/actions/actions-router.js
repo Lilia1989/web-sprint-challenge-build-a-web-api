@@ -1,7 +1,7 @@
 // Write your "actions" router here!
 const router = require("express").Router();
 const Action = require("./actions-model");
-const { checkActionId, checkAction } = require("../middleware/middleware");
+const { checkActionId, checkAction } = require("./actions-middlware");
 
 router.get("/", (req, res, next) => {
     Action.get()
